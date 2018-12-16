@@ -1,0 +1,147 @@
+if (!is.na(gender) & gender == "Female") {
+    gender <- 1
+}
+if (!is.na(gender) & gender == "Male") {
+    gender <- 0
+}
+if (!is.na(Partner) & Partner == "Yes") {
+    Partner <- 1
+}
+if (!is.na(Partner) & Partner == "No") {
+    Partner <- 0
+}
+if (!is.na(Dependents) & Dependents == "Yes") {
+    Dependents <- 1
+}
+if (!is.na(Dependents) & Dependents == "No") {
+    Dependents <- 0
+}
+if (!is.na(PhoneService) & PhoneService == "Yes") {
+    PhoneService <- 1
+}
+if (!is.na(PhoneService) & PhoneService == "No") {
+    PhoneService <- 0
+}
+if (!is.na(MultipleLines) & MultipleLines == "Yes") {
+    MultipleLines <- 1
+}
+if (!is.na(MultipleLines) & (MultipleLines == "No phone service" || MultipleLines == "No")) {
+    MultipleLines <- 0
+}
+if (!is.na(InternetService) & InternetService == "No") {
+    InternetService <- 0
+}
+if (!is.na(InternetService) & InternetService == "DSL") {
+    InternetService <- 1
+}
+if (!is.na(InternetService) & InternetService == "Fiber optic") {
+    InternetService <- 2
+}
+if (!is.na(OnlineSecurity) & (OnlineSecurity == "No internet service" | OnlineSecurity == "No")) {
+    OnlineSecurity <- 0
+}
+if (!is.na(OnlineSecurity) & OnlineSecurity == "Yes") {
+    OnlineSecurity <- 1
+}
+if (!is.na(OnlineBackup) & (OnlineBackup == "No internet service" | OnlineBackup == "No")) {
+    OnlineBackup <- 0
+}
+if (!is.na(OnlineBackup) & OnlineBackup == "Yes") {
+    OnlineBackup <- 1
+}
+if (!is.na(DeviceProtection) & (DeviceProtection == "No internet service" | DeviceProtection == "No")) {
+    DeviceProtection <- 0
+}
+if (!is.na(DeviceProtection) & DeviceProtection == "Yes") {
+    DeviceProtection <- 1
+}
+if (!is.na(TechSupport) & (TechSupport == "No internet service" | TechSupport == "No")) {
+    TechSupport <- 0
+}
+if (!is.na(TechSupport) & TechSupport == "Yes") {
+    TechSupport <- 1
+}
+if (!is.na(StreamingTV) & (StreamingTV == "No internet service" | StreamingTV == "No")) {
+    StreamingTV <- 0
+}
+if (!is.na(StreamingTV) & StreamingTV == "Yes") {
+    StreamingTV <- 1
+}
+if (!is.na(StreamingMovies) & (StreamingMovies == "No internet service" | StreamingMovies == "No")) {
+    StreamingMovies <- 0
+}
+if (!is.na(StreamingMovies) & StreamingMovies == "Yes") {
+    StreamingMovies <- 1
+}
+if (!is.na(Contract) & Contract == "Month-to-month") {
+    Contract <- 1
+}
+if (!is.na(Contract) & Contract == "One year") {
+    Contract <- 2
+}
+if (!is.na(Contract) & Contract == "Two year") {
+    Contract <- 3
+}
+if (!is.na(PaperlessBilling) & PaperlessBilling == "No") {
+    PaperlessBilling <- 0
+}
+if (!is.na(PaperlessBilling) & PaperlessBilling == "Yes") {
+    PaperlessBilling <- 1
+}
+if (!is.na(PaymentMethod) & PaymentMethod == "Electronic check") {
+    PaymentMethod <- 1
+}
+if (!is.na(PaymentMethod) & PaymentMethod == "Mailed check") {
+    PaymentMethod <- 2
+}
+if (!is.na(PaymentMethod) & PaymentMethod == "Bank transfer (automatic)") {
+    PaymentMethod <- 3
+}
+if (!is.na(PaymentMethod) & PaymentMethod == "Credit card (automatic)") {
+    PaymentMethod <- 4
+}
+if (!is.na(Churn) & Churn == "Yes") {
+    Churn <- 1
+}
+if (!is.na(Churn) & Churn == "No") {
+    Churn <- 0
+}
+if (!is.na(tenure) & tenure <= 12) {
+    tenure <- 1
+}
+if (!is.na(tenure) & tenure > 12 & tenure <= 24) {
+    tenure <- 2
+}
+if (!is.na(tenure) & tenure > 24 & tenure <= 48) {
+    tenure <- 4
+}
+if (!is.na(tenure) & tenure > 48 & tenure <= 60) {
+    tenure <- 5
+}
+if (!is.na(tenure) & tenure > 60) {
+    tenure <- 6
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges <= 29) {
+    MonthlyCharges <- 1
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 29.6875 & MonthlyCharges <= 59.375) {
+    MonthlyCharges <- 2
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 59.375 & MonthlyCharges <= 89.0625) {
+    MonthlyCharges <- 3
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 89.0625) {
+    MonthlyCharges <- 4
+}
+if (!is.na(TotalCharges) & TotalCharges <= 2171.2) {
+    TotalCharges <- 1
+}
+if (!is.na(TotalCharges) & TotalCharges > 2171.2 & TotalCharges <= 4342.4) {
+    TotalCharges <- 2
+}
+if (!is.na(TotalCharges) & TotalCharges > 4342.4 & TotalCharges <= 6513.6) {
+    TotalCharges <- 3
+}
+if (!is.na(TotalCharges) & TotalCharges > 6513.6) {
+    TotalCharges <- 4
+}

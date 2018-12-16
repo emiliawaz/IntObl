@@ -1,0 +1,24 @@
+if (!is.na(MonthlyCharges) & MonthlyCharges <= 0.25) {
+    MonthlyCharges <- 1
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 0.25 & MonthlyCharges <= 0.5) {
+    MonthlyCharges <- 2
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 0.5 & MonthlyCharges <= 0.75) {
+    MonthlyCharges <- 3
+}
+if (!is.na(MonthlyCharges) & MonthlyCharges > 0.75 & MonthlyCharges <= 1) {
+    MonthlyCharges <- 4
+}
+if (!is.na(TotalCharges) & TotalCharges <= 0.25) {
+    TotalCharges <- 1
+}
+if (!is.na(TotalCharges) & TotalCharges > 0.25 & TotalCharges <= 0.5) {
+    TotalCharges <- 2
+}
+if (!is.na(TotalCharges) & TotalCharges > 0.5 & TotalCharges <= 0.75) {
+    TotalCharges <- 3
+}
+if (!is.na(TotalCharges) & TotalCharges > 0.75 & TotalCharges <= 1) {
+    TotalCharges <- 4
+}

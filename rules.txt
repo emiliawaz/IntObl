@@ -1,0 +1,42 @@
+if (!is.na(OnlineSecurity) & OnlineSecurity == "No internet service") {
+    OnlineSecurity <- "No"
+}
+if (!is.na(OnlineBackup) & OnlineBackup == "No internet service") {
+    OnlineBackup <- "No"
+}
+if (!is.na(DeviceProtection) & DeviceProtection == "No internet service") {
+    DeviceProtection <- "No"
+}
+if (!is.na(TechSupport) & TechSupport == "No internet service") {
+    TechSupport <- "No"
+}
+if (!is.na(StreamingTV) & StreamingTV == "No internet service") {
+    StreamingTV <- "No"
+}
+if (!is.na(StreamingMovies) & StreamingMovies == "No internet service") {
+    StreamingMovies <- "No"
+}
+if (!is.na(MultipleLines) & MultipleLines == "No phone service") {
+    MultipleLines <- "No"
+}
+if (!is.na(SeniorCitizen) & SeniorCitizen == 1) {
+    SeniorCitizen <- "Yes"
+}
+if (!is.na(SeniorCitizen) & SeniorCitizen == 0) {
+    SeniorCitizen <- "No"
+}
+if (!is.na(tenure) & tenure <= 12) {
+    tenure <- "0-12"
+}
+if (!is.na(tenure) & tenure > 12 & tenure <= 24) {
+    tenure <- "12-24"
+}
+if (!is.na(tenure) & tenure > 24 & tenure <= 48) {
+    tenure <- "12-24"
+}
+if (!is.na(tenure) & tenure > 48 & tenure <= 60) {
+    tenure <- "48-60"
+}
+if (!is.na(tenure) & tenure > 60) {
+    tenure <- "60-72"
+}
